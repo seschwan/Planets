@@ -13,16 +13,24 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var plutoSwitch: UISwitch!
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.updateViews()
+    }
+    
+    private func updateViews() {
+        let userDefaults = UserDefaults.standard
+        self.plutoSwitch.isOn = userDefaults.bool(forKey: .shouldShowPlutoKey)
     }
     
     @IBAction func plutoSwitchToggled(_ sender: UISwitch) {
-        
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(sender.isOn, forKey: .shouldShowPlutoKey)
     }
     
     
 
+}
+extension String {
+    static var shouldShowPlutoKey = "shouldShowPlutoKey"
 }
