@@ -12,6 +12,9 @@
 		B3D9C29E228CF6B7005AA6D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D9C29C228CF6B7005AA6D5 /* Main.storyboard */; };
 		B3D9C2A0228CF6B8005AA6D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D9C29F228CF6B8005AA6D5 /* Assets.xcassets */; };
 		B3D9C2A3228CF6B8005AA6D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3D9C2A1228CF6B8005AA6D5 /* LaunchScreen.storyboard */; };
+		B3D9C2AC228CF8C7005AA6D5 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D9C2AB228CF8C7005AA6D5 /* PlanetController.swift */; };
+		B3D9C2B5228CF8D7005AA6D5 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D9C2AE228CF8D7005AA6D5 /* Planet.swift */; };
+		B3D9C2BA228CFD63005AA6D5 /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D9C2B9228CFD63005AA6D5 /* PlanetCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		B3D9C29F228CF6B8005AA6D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3D9C2A2228CF6B8005AA6D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3D9C2A4228CF6B8005AA6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3D9C2AB228CF8C7005AA6D5 /* PlanetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		B3D9C2AE228CF8D7005AA6D5 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		B3D9C2B9228CFD63005AA6D5 /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,10 @@
 			isa = PBXGroup;
 			children = (
 				B3D9C297228CF6B7005AA6D5 /* Planets */,
+				B3D9C2AA228CF8C7005AA6D5 /* Model Controller */,
+				B3D9C2AF228CF8D7005AA6D5 /* Resources */,
+				B3D9C2AD228CF8D7005AA6D5 /* Model */,
+				B3D9C29F228CF6B8005AA6D5 /* Assets.xcassets */,
 				B3D9C296228CF6B7005AA6D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +66,36 @@
 			children = (
 				B3D9C298228CF6B7005AA6D5 /* AppDelegate.swift */,
 				B3D9C29A228CF6B7005AA6D5 /* ViewController.swift */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		B3D9C2AA228CF8C7005AA6D5 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3D9C2AB228CF8C7005AA6D5 /* PlanetController.swift */,
+			);
+			name = "Model Controller";
+			path = "Planets/Model Controller";
+			sourceTree = "<group>";
+		};
+		B3D9C2AD228CF8D7005AA6D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3D9C2AE228CF8D7005AA6D5 /* Planet.swift */,
+				B3D9C2B9228CFD63005AA6D5 /* PlanetCollectionViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3D9C2AF228CF8D7005AA6D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				B3D9C29C228CF6B7005AA6D5 /* Main.storyboard */,
-				B3D9C29F228CF6B8005AA6D5 /* Assets.xcassets */,
 				B3D9C2A1228CF6B8005AA6D5 /* LaunchScreen.storyboard */,
 				B3D9C2A4228CF6B8005AA6D5 /* Info.plist */,
 			);
-			path = Planets;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D9C2AC228CF8C7005AA6D5 /* PlanetController.swift in Sources */,
 				B3D9C29B228CF6B7005AA6D5 /* ViewController.swift in Sources */,
+				B3D9C2BA228CFD63005AA6D5 /* PlanetCollectionViewCell.swift in Sources */,
 				B3D9C299228CF6B7005AA6D5 /* AppDelegate.swift in Sources */,
+				B3D9C2B5228CF8D7005AA6D5 /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
